@@ -1,98 +1,49 @@
-Customer Churn Prediction using AN
- **Project Overview**
+Customer Churn Prediction using ANN
 
-This project predicts whether a customer will leave (churn) or stay in a bank using an Artificial Neural Network (ANN).
+ Overview
 
-The model is built using TensorFlow (Keras) and Scikit-learn, and includes full preprocessing, feature scaling, training, evaluation, and performance visualization.
+Built an Artificial Neural Network (ANN) to predict customer churn using the Bank Churn dataset. The project covers complete preprocessing, model training, evaluation, and performance visualization.
 
-**Problem Statement**
+ Objective
 
-Customer churn prediction helps businesses identify customers who are likely to leave, allowing them to take proactive actions to retain them.
+Predict whether a customer will:
 
-This is a binary classification problem:
+0 → Stay
 
-0 → Customer stays
+1 → Exit
 
-1 → Customer exits
+Tech Stack
 
-🛠️ Technologies Used
+Python • Pandas • NumPy • Scikit-learn • TensorFlow (Keras) • Matplotlib
 
-Python
-
-Pandas
-
-NumPy
-
-Matplotlib
-
-Scikit-learn
-
-TensorFlow / Keras
-
- **Project Workflow**
-
-Data Loading
-
-Data Cleaning
-
-Categorical Encoding
-
-Train-Test Split
-
-Feature Scaling
-
-ANN Model Building
-
-Model Training
-
-Performance Evaluation
-
-Accuracy & Loss Visualization
-
-**Model Architecture**
+ Model Architecture
 
 Input Layer (11 features)
 
-Dense Layer (16 neurons, ReLU)
+Dense (16, ReLU)
 
-Dense Layer (8 neurons, ReLU)
+Dense (8, ReLU)
 
-Output Layer (1 neuron, Sigmoid)
+Output (1, Sigmoid)
 
-Loss Function: Binary Crossentropy
+Loss: Binary Crossentropy
 Optimizer: Adam
 Metric: Accuracy
 
-**Model Performance**
+Performance
 
-Achieved approximately 82%–86% accuracy
+ Test Accuracy: 84.25% (replace with your exact value)
 
-Proper train vs validation monitoring
+Includes Confusion Matrix & Classification Report
 
-Confusion matrix and classification report included
+Train vs Validation Accuracy/Loss visualization
 
-**Visualizations
+ Workflow
 
-The project includes:
+Data Cleaning → Encoding → Scaling → ANN Training → Evaluation → Visualization
 
-Training vs Validation Accuracy Curve
+Dataset
 
-Training vs Validation Loss Curve
+Churn_Modelling.csv
+Key features: Credit Score, Geography, Gender, Age, Balance, Tenure, Estimated Salary
 
-Dataset used: Churn_Modelling.csv
-
-Features include:
-
-Credit Score
-
-Geography
-
-Gender
-
-Age
-
-Balance
-
-Tenure
-
-Estimated Salary
